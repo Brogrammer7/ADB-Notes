@@ -13,15 +13,19 @@ file -> settings -> Terminal -> Application Setting -> shell path: c:\windows\sy
 
 **Important note** BOTH YOUR PC AND PHONE MUST BE ON SAME WIFI NETWORK
 
-1. to connect FIRST pair using port # from 'Pair with Code' button:
+To connect wirelessly via ADB if drop-down doesn't work:
 
-2. .\adb pair 192.168.xx.xxx:xxxxx
+1. Enable Wireless Debugging in Settings - Developer Options.
+  
+2. To connect, FIRST pair using port # from 'Pair with Code' button:
 
-3. enter 6 digit code
+3. .\adb pair 192.168.xx.xxx:xxxxx (where xxxxx = port # from Pair with Code section)
 
-4. THEN use port # from top area (not Pair with Code section!):
+4. input 6 digit code & hit enter
 
-5. .\adb connect 192.168.xx.xxx:xxxxx 
+5. THEN get port # from top area (not Pair with Code section!):
+
+6. .\adb connect 192.168.xx.xxx:xxxxx (where xxxxx = port # from top section)
 
 
 To fix a connection error (you may need to connect over USB wire or restart phone device):
