@@ -39,11 +39,11 @@ Specify device to run command:
 
 .\adb -s emulator-5554 + (command of your choice)
 
-.\adb -s R5CT5302E2F
+.\adb -s (device id name)
 
 open deep link:
 
 .\adb shell am start -d "rally://single_account/Checking" -a android.intent.action.VIEW
 
-.\adb -s R5CT5302E2F shell am start -d "rally://single_account/Checking" -a android.intent.action.VIEW
+.\adb -s (device id name) shell am start -d "rally://single_account/Checking" -a android.intent.action.VIEW
 
